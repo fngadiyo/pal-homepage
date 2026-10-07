@@ -454,6 +454,14 @@ a { color: var(--accent-ink); }
   top: 84px;
 }
 .c-k { color: var(--code-key); }
+
+/* Wide install snippet sits above the cards, not in the sticky column. */
+.install-block {
+  position: static;
+  margin: 24px 0 28px;
+  font-size: 0.86rem;
+  padding: 20px 22px;
+}
 .c-s { color: var(--code-str); }
 .c-p { color: #79c0ff; }
 .c-f { color: #ffa657; }

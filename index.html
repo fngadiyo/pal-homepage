@@ -3,11 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>pal — an open-source terminal coding agent you can inspect and extend</title>
-<meta name="description" content="pal is a BYOK terminal coding agent for developers: logic lives in @pal-code/core, rendering in @pal-code/cli. Bring your own API key to DeepSeek, Gemini, OpenAI, Groq, xAI, Mistral, or OpenRouter, and add tools, MCP servers, web search, and multi-agent roles at runtime without changing core.">
+<title>pal — a terminal coding agent with a library core you can extend</title>
+<meta name="description" content="pal is a BYOK terminal coding agent for developers: logic lives in @pal-code/core, rendering in @pal-code/cli. Bring your own API key to DeepSeek, Gemini, OpenAI, Groq, xAI, Mistral, or OpenRouter, and add tools, MCP servers, web search, and multi-agent roles at runtime without changing core. Install with npm install -g pal-code.">
 <link rel="canonical" href="https://pal.fngadiyo.com/">
 
-<meta name="keywords" content="terminal coding agent, CLI AI coding agent, BYOK LLM, open source coding agent, MCP client, TypeScript agent, Bun CLI, AI pair programming, extensible coding agent">
+<meta name="keywords" content="terminal coding agent, CLI AI coding agent, BYOK LLM, MCP client, TypeScript agent, Bun CLI, AI pair programming, extensible coding agent, AI code editor, coding agent CLI, npm pal-code">
 
 <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
 <meta name="author" content="Fngadiyo">
@@ -23,7 +23,7 @@
       "@id": "https://pal.fngadiyo.com/#software",
       "name": "pal",
       "alternateName": "pal-code",
-      "description": "An open-source terminal coding agent that runs locally in the user's own project. Bring your own API key, choose any OpenAI-compatible model, and add tools, MCP servers, web search, and multi-agent roles as runtime extensions.",
+      "description": "A terminal coding agent that runs locally in the user's own project. Bring your own API key, choose any OpenAI-compatible model, and add tools, MCP servers, web search, and multi-agent roles as runtime extensions.",
       "applicationCategory": "DeveloperApplication",
       "operatingSystem": "macOS, Linux, Windows",
       "url": "https://pal.fngadiyo.com/",
@@ -33,7 +33,6 @@
       "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"},
       "downloadUrl": "https://www.npmjs.com/package/pal-code",
       "installCommand": "npm install -g pal-code",
-      "codeRepository": "https://github.com/fngadiyo/the-agent",
       "programmingLanguage": "TypeScript",
       "runtimePlatform": "Bun",
       "featureList": [
@@ -48,18 +47,6 @@
       ],
       "author": {"@id": "https://fngadiyo.com/#organization"},
       "publisher": {"@id": "https://fngadiyo.com/#organization"}
-    },
-    {
-      "@type": "SoftwareSourceCode",
-      "@id": "https://pal.fngadiyo.com/#source",
-      "name": "pal",
-      "description": "Source code for pal, a BYOK terminal coding agent with a library core and a rendering-only CLI.",
-      "codeRepository": "https://github.com/fngadiyo/the-agent",
-      "codeSampleType": "full",
-      "programmingLanguage": "TypeScript",
-      "runtimePlatform": "Bun",
-      "license": "https://opensource.org/licenses/MIT",
-      "author": {"@id": "https://fngadiyo.com/#organization"}
     },
     {
       "@type": "Organization",
@@ -105,7 +92,12 @@
         {
           "@type": "Question",
           "name": "Is pal open source?",
-          "acceptedAnswer": {"@type": "Answer", "text": "Yes, pal is MIT licensed and developed in the open at github.com/fngadiyo/the-agent. It is pre-1.0, so the extension interface and some internal APIs may still change."}
+          "acceptedAnswer": {"@type": "Answer", "text": "Not yet. pal ships as the published npm package pal-code, but its source repository is not public at the time of writing. It is licensed under MIT, and the public source release is planned once the project is polished. pal is pre-1.0, so the extension interface and some internal APIs may still change."}
+        },
+        {
+          "@type": "Question",
+          "name": "Where do I get pal?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Install it from npm with npm install -g pal-code, or bun add -g pal-code, then run pal inside any project directory. The package page is at npmjs.com/package/pal-code and the project home is pal.fngadiyo.com."}
         }
       ]
     }
@@ -127,23 +119,22 @@
 
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://pal.fngadiyo.com/">
-<meta property="og:title" content="pal — an open-source terminal coding agent you can inspect and extend">
+<meta property="og:title" content="pal — a terminal coding agent with a library core you can extend">
 <meta property="og:description" content="A BYOK terminal coding agent with a library core, a rendering-only CLI, and runtime extensions for tools, MCP servers, web search, and multi-agent roles.">
 <meta property="og:site_name" content="pal">
 <meta property="og:image" content="https://pal.fngadiyo.com/og.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="pal — an open-source terminal coding agent with a library core and runtime extensions">
+<meta property="og:image:alt" content="pal — a terminal coding agent with a library core and runtime extensions">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="pal — an open-source terminal coding agent you can inspect and extend">
+<meta name="twitter:title" content="pal — a terminal coding agent with a library core you can extend">
 <meta name="twitter:description" content="A BYOK terminal coding agent with a library core, a rendering-only CLI, and runtime extensions for tools, MCP servers, web search, and multi-agent roles.">
 <meta name="twitter:image" content="https://pal.fngadiyo.com/og.png">
-<meta name="twitter:image:alt" content="pal — an open-source terminal coding agent with a library core and runtime extensions">
+<meta name="twitter:image:alt" content="pal — a terminal coding agent with a library core and runtime extensions">
 
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="styles.css">
 <script src="nav.js" defer></script>
-<link rel="icon" href="favicon.svg">
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
@@ -164,8 +155,8 @@
       <a href="#extend">Extending</a>
       <a href="#terminal">In use</a>
       <a href="#faq">FAQ</a>
-      <a href="#open-source">Open source</a>
-      <a class="nav-cta" href="https://github.com/fngadiyo/the-agent">GitHub</a>
+      <a href="#open-source">Get pal</a>
+      <a class="nav-cta" href="https://www.npmjs.com/package/pal-code">npm</a>
     </div>
   </nav>
 </header>
@@ -176,7 +167,7 @@
   <section class="hero" id="top">
     <div class="wrap hero-grid">
       <div class="hero-copy">
-        <p class="eyebrow">A terminal coding agent</p>
+        <p class="eyebrow">pal-code on npm</p>
         <h1>pal runs in your terminal.<br>Its brain is a library.</h1>
         <p class="lede">
           pal reads and edits your project through a streaming TUI, bring your own
@@ -184,8 +175,8 @@
           MCP servers, web search, multi-agent roles — without touching pal's core.
         </p>
         <div class="hero-actions">
-          <a class="btn btn-primary" href="https://github.com/fngadiyo/the-agent">View on GitHub</a>
-          <a class="btn" href="https://github.com/fngadiyo/the-agent#readme">Get started</a>
+          <a class="btn btn-primary" href="https://www.npmjs.com/package/pal-code">Install from npm</a>
+          <a class="btn" href="#terminal">See it run</a>
         </div>
         <p class="hero-note">
           Requires <strong>Bun&nbsp;≥&nbsp;1.1</strong>. Install with
@@ -386,7 +377,7 @@
           <code>~/.pal/extensions/</code>, or point at a path. Name it in config and
           pal finds it at runtime.
         </p>
-        <p><a class="link-arrow" href="https://github.com/fngadiyo/the-agent/blob/main/EXTENSIONS.md">Read the extension guide →</a></p>
+        <p><a class="link-arrow" href="#open-source">See how to install it →</a></p>
       </div>
       <div class="split-code">
         <pre class="code-block"><code><span class="c-k">import</span> <span class="c-t">{</span>ToolExtension<span class="c-t">}</span> <span class="c-k">from</span> <span class="c-s">'@pal-code/core'</span><span class="c-t">;</span>
@@ -466,7 +457,7 @@
         </div>
         <div class="prio">
           <h3>You want a legible engine</h3>
-          <p>An 18k-line TypeScript codebase with a stated architecture, 366 tests, and an eval harness. Read the loop, read the split, judge it for yourself.</p>
+          <p>An 18k-line TypeScript codebase with a stated architecture, 366 tests, and an eval harness. Inspectable by design, not a black box.</p>
         </div>
         <div class="prio">
           <h3>You keep control</h3>
@@ -475,8 +466,8 @@
       </div>
       <p class="section-note">
         pal is MIT-licensed and pre-1.0 — the extension interface and internal
-        APIs may still move. It targets developers who want to read the code and
-        own their setup, not a fully managed team service.
+        APIs may still move. It targets developers who want control over their own
+        setup, not a fully managed team service.
       </p>
     </div>
   </section>
@@ -484,28 +475,35 @@
   <!-- ───────────────────────── Open source ───────────────────────── -->
   <section class="section" id="open-source">
     <div class="wrap">
-      <h2 class="section-title">Open source, built in the open</h2>
+      <h2 class="section-title">Install it in about a minute</h2>
       <p class="section-lede">
-        pal is MIT-licensed and developed in the open on GitHub. Clone it, run it
-        with your own key, and read every line of the agent loop.
+        pal is published to npm under <code>pal-code</code> and is MIT-licensed.
+        Install it globally, run <code>pal</code> in any project, and point it at
+        your own provider key.
       </p>
+      <pre class="code-block install-block"><code><span class="c-p">#</span> Bun 1.1+ or Node 18+ required
+<span class="c-p">npm</span> install -g pal-code
+<span class="c-p">#</span> or, with Bun:
+<span class="c-p">bun</span> add -g pal-code
+
+<span class="c-p">$</span> pal</code></pre>
       <div class="grid grid-3">
         <div class="card">
-          <h3>Read the source</h3>
-          <p>The engine is a library. Read <code>run.ts</code>, the tool executor, and the provider registry — they're documented, tested, and short enough to actually finish.</p>
+          <h3>Bun first, Node works too</h3>
+          <p>pal is built and tested on Bun and runs on Node 18 or newer as well. The published package carries prebuilt binaries for macOS, Linux, and Windows.</p>
         </div>
         <div class="card">
-          <h3>Write an extension</h3>
-          <p>Contribute a tool, an MCP bridge, or a web provider. The starter template is a single small file; npm is the registry — no hosted marketplace to wait on.</p>
+          <h3>Bring your own key</h3>
+          <p>No account, no hosted service, no telemetry. Set a provider key on first run and pal talks directly to the model API you chose.</p>
         </div>
         <div class="card">
-          <h3>Run the checks</h3>
-          <p><code>bun test</code>, <code>bunx tsc --noEmit</code>, <code>bun run eval --mock</code>. Six scripted task fixtures that exercise the agent loop in-process, no network required.</p>
+          <h3>Extend it yourself</h3>
+          <p>Write an extension as a small npm package, drop it in <code>~/.pal/extensions</code>, and it loads at runtime — no fork or rebuild of pal required.</p>
         </div>
       </div>
       <p class="center-cta">
-        <a class="btn btn-primary" href="https://github.com/fngadiyo/the-agent">Star &amp; clone on GitHub</a>
-        <a class="btn" href="https://github.com/fngadiyo/the-agent#readme">Read the README</a>
+        <a class="btn btn-primary" href="https://www.npmjs.com/package/pal-code">View on npm</a>
+        <a class="btn" href="#faq">Read the FAQ</a>
       </p>
     </div>
   </section>
@@ -540,6 +538,10 @@
           <p>No — and it does not pretend to be. Permissions are glob-based allow/ask/deny rules with prompts for sensitive files and a deny list for catastrophic shell commands. That is guardrailing, not a sandbox: an allowed command runs as your user. Run pal in a container if you need containment.</p>
         </details>
         <details class="faq-item">
+          <summary><h3>Is pal open source?</h3></summary>
+          <p>Not yet. pal ships as the published npm package <code>pal-code</code>, but its source repository is not public at the time of writing. It is licensed under MIT, and the public source release is planned once the project is polished.</p>
+        </details>
+        <details class="faq-item">
           <summary><h3>How stable is this?</h3></summary>
           <p>pal is MIT licensed and pre-1.0 at version 0.0.14. The extension interface and some internal APIs may still change between minor versions. The agent loop, tool executor, and event protocol are the parts most worth depending on.</p>
         </details>
@@ -555,17 +557,14 @@
       <p class="footer-tag">A terminal coding agent you can take apart.</p>
     </div>
     <nav class="footer-links" aria-label="Footer">
-      <a href="https://github.com/fngadiyo/the-agent">GitHub</a>
       <a href="https://www.npmjs.com/package/pal-code">npm</a>
-      <a href="https://github.com/fngadiyo/the-agent#readme">Docs</a>
+      <a href="#faq">FAQ</a>
       <a href="https://fngadiyo.com">Fngadiyo</a>
     </nav>
   </div>
   <div class="wrap footer-legal">
-    <p>MIT licensed. Built by <a href="https://fngadiyo.com">Fngadiyo</a>.</p>
+    <p>MIT licensed. Installed from <a href="https://www.npmjs.com/package/pal-code">npm</a>. Built by <a href="https://fngadiyo.com">Fngadiyo</a>.</p>
   </div>
 </footer>
-
-<script src="nav.js" defer></script>
 </body>
 </html>
