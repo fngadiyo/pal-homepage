@@ -3,14 +3,14 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>pal — a terminal coding agent with a library core you can extend</title>
+<title>pal - a terminal coding agent with a library core you can extend</title>
 <meta name="description" content="pal is a BYOK terminal coding agent for developers: logic lives in @pal-code/core, rendering in @pal-code/cli. Bring your own API key to DeepSeek, Gemini, OpenAI, Groq, xAI, Mistral, or OpenRouter, and add tools, MCP servers, web search, and multi-agent roles at runtime without changing core. Install with npm install -g pal-code.">
 <link rel="canonical" href="https://pal.fngadiyo.com/">
 
 <meta name="keywords" content="terminal coding agent, CLI AI coding agent, BYOK LLM, MCP client, TypeScript agent, Bun CLI, AI pair programming, extensible coding agent, AI code editor, coding agent CLI, npm pal-code">
 
 <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
-<meta name="author" content="Fngadiyo">
+<meta name="author" content="fngadiyo">
 <meta name="theme-color" content="#0d1117" media="(prefers-color-scheme: dark)">
 <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
 
@@ -51,7 +51,7 @@
     {
       "@type": "Organization",
       "@id": "https://fngadiyo.com/#organization",
-      "name": "Fngadiyo",
+      "name": "fngadiyo",
       "url": "https://fngadiyo.com/",
       "logo": "https://pal.fngadiyo.com/favicon.svg"
     },
@@ -119,18 +119,18 @@
 
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://pal.fngadiyo.com/">
-<meta property="og:title" content="pal — a terminal coding agent with a library core you can extend">
+<meta property="og:title" content="pal - a terminal coding agent with a library core you can extend">
 <meta property="og:description" content="A BYOK terminal coding agent with a library core, a rendering-only CLI, and runtime extensions for tools, MCP servers, web search, and multi-agent roles.">
 <meta property="og:site_name" content="pal">
 <meta property="og:image" content="https://pal.fngadiyo.com/og.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="pal — a terminal coding agent with a library core and runtime extensions">
+<meta property="og:image:alt" content="pal - a terminal coding agent with a library core and runtime extensions">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="pal — a terminal coding agent with a library core you can extend">
+<meta name="twitter:title" content="pal - a terminal coding agent with a library core you can extend">
 <meta name="twitter:description" content="A BYOK terminal coding agent with a library core, a rendering-only CLI, and runtime extensions for tools, MCP servers, web search, and multi-agent roles.">
 <meta name="twitter:image" content="https://pal.fngadiyo.com/og.png">
-<meta name="twitter:image:alt" content="pal — a terminal coding agent with a library core and runtime extensions">
+<meta name="twitter:image:alt" content="pal - a terminal coding agent with a library core and runtime extensions">
 
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="styles.css">
@@ -171,8 +171,8 @@
         <h1>pal runs in your terminal.<br>Its brain is a library.</h1>
         <p class="lede">
           pal reads and edits your project through a streaming TUI, bring your own
-          key to any OpenAI-compatible model, and extend it at runtime — tools,
-          MCP servers, web search, multi-agent roles — without touching pal's core.
+          key to any OpenAI-compatible model, and extend it at runtime - tools,
+          MCP servers, web search, multi-agent roles - without touching pal's core.
         </p>
         <div class="hero-actions">
           <a class="btn btn-primary" href="https://www.npmjs.com/package/pal-code">Install from npm</a>
@@ -212,7 +212,7 @@
       <p class="section-lede">
         Most terminal agents are one program: the agent loop, the tools, the model
         clients, and the UI all tangled together. That's fine until you want to
-        change something the author didn't anticipate — add a tool, retarget a
+        change something the author didn't anticipate - add a tool, retarget a
         sub-agent, wire an MCP server, or reuse the engine somewhere that isn't
         the terminal.
       </p>
@@ -229,7 +229,7 @@
         </div>
         <div class="card">
           <h3>Extensions at runtime</h3>
-          <p>A capability is an npm package that default-exports a small object. pal resolves it at runtime and never recompiles — adding a tool needs zero changes to pal.</p>
+          <p>A capability is an npm package that default-exports a small object. pal resolves it at runtime and never recompiles - adding a tool needs zero changes to pal.</p>
         </div>
         <div class="card">
           <h3>Honest boundaries</h3>
@@ -243,7 +243,7 @@
   <section class="section section-alt" id="capabilities">
     <div class="wrap">
       <h2 class="section-title">What it does today</h2>
-      <p class="section-lede">Everything below ships in the 0.0.x line — no roadmap required.</p>
+      <p class="section-lede">Everything below ships in the 0.0.x line - no roadmap required.</p>
 
       <div class="caps">
         <article class="cap">
@@ -276,7 +276,7 @@
         </article>
         <article class="cap">
           <h3>Web access</h3>
-          <p><code>fetch_url</code> and <code>web_search</code> as an extension — DuckDuckGo, SearXNG, Tavily, or Brave.</p>
+          <p><code>fetch_url</code> and <code>web_search</code> as an extension - DuckDuckGo, SearXNG, Tavily, or Brave.</p>
         </article>
         <article class="cap">
           <h3>Skills &amp; roles as files</h3>
@@ -337,15 +337,15 @@
       <div class="grid grid-2 arch-notes">
         <div class="card">
           <h3>The boundary rule</h3>
-          <p>Core has no knowledge of the TUI. The CLI does not re-decide what the agent does — it only renders events. Every capability has exactly one home: the split is by responsibility, not convenience.</p>
+          <p>Core has no knowledge of the TUI. The CLI does not re-decide what the agent does - it only renders events. Every capability has exactly one home: the split is by responsibility, not convenience.</p>
         </div>
         <div class="card">
           <h3>The event protocol</h3>
-          <p><code>runAgent</code> yields a small vocabulary — <code>model-start</code>, <code>round-start</code>, <code>text-delta</code>, <code>tool-start</code>/<code>tool-end</code>, <code>notice</code>, <code>aborted</code>, <code>done</code> — and never touches the screen. Adding a front-end means consuming this stream.</p>
+          <p><code>runAgent</code> yields a small vocabulary - <code>model-start</code>, <code>round-start</code>, <code>text-delta</code>, <code>tool-start</code>/<code>tool-end</code>, <code>notice</code>, <code>aborted</code>, <code>done</code> - and never touches the screen. Adding a front-end means consuming this stream.</p>
         </div>
         <div class="card">
           <h3>Injected executor</h3>
-          <p>The loop is handed its <code>executeTool</code> rather than importing the registry, avoiding a cycle and letting callers inject permission gates — the CLI gates children; tests inject fakes.</p>
+          <p>The loop is handed its <code>executeTool</code> rather than importing the registry, avoiding a cycle and letting callers inject permission gates - the CLI gates children; tests inject fakes.</p>
         </div>
         <div class="card">
           <h3>Scoped sub-runs</h3>
@@ -368,9 +368,9 @@
         <ul class="ticks">
           <li><strong>Tools</strong> in OpenAI function-calling format, with handlers returning a string.</li>
           <li><strong>setup()</strong> for process-wide capabilities (the agents extension registers the role provider here).</li>
-          <li><strong>lifecycle</strong> hooks — <code>onTurnStart</code>, <code>onTurnEnd</code>, <code>onToolCall</code>, <code>onError</code> — to observe turns, tool calls, and failures without wrapping core.</li>
+          <li><strong>lifecycle</strong> hooks - <code>onTurnStart</code>, <code>onTurnEnd</code>, <code>onToolCall</code>, <code>onError</code> - to observe turns, tool calls, and failures without wrapping core.</li>
           <li><strong>Own config</strong> in <code>./&lt;name&gt;.json</code> and <code>~/.pal/&lt;name&gt;.json</code>, so pal's config stays clean.</li>
-          <li><strong>Failure-isolated</strong> — a broken extension never stops pal from starting; failures surface in the sidebar.</li>
+          <li><strong>Failure-isolated</strong> - a broken extension never stops pal from starting; failures surface in the sidebar.</li>
         </ul>
         <p class="section-note">
           Ship it as <code>@yourname/pal-extension-name</code>, drop it in
@@ -419,7 +419,7 @@
         <div class="card">
           <h3>Stay in flow</h3>
           <ul class="ticks ticks-tight">
-            <li>Type while a turn runs — messages queue and drain on settle.</li>
+            <li>Type while a turn runs - messages queue and drain on settle.</li>
             <li><strong>Esc</strong> interrupts the turn, including a running delegation.</li>
             <li><code>/copy</code> yanks the last reply or code block over SSH via OSC 52.</li>
             <li>Keybindings for scrollback; the transcript stays navigable.</li>
@@ -465,7 +465,7 @@
         </div>
       </div>
       <p class="section-note">
-        pal is MIT-licensed and pre-1.0 — the extension interface and internal
+        pal is MIT-licensed and pre-1.0 - the extension interface and internal
         APIs may still move. It targets developers who want control over their own
         setup, not a fully managed team service.
       </p>
@@ -498,7 +498,7 @@
         </div>
         <div class="card">
           <h3>Extend it yourself</h3>
-          <p>Write an extension as a small npm package, drop it in <code>~/.pal/extensions</code>, and it loads at runtime — no fork or rebuild of pal required.</p>
+          <p>Write an extension as a small npm package, drop it in <code>~/.pal/extensions</code>, and it loads at runtime - no fork or rebuild of pal required.</p>
         </div>
       </div>
       <p class="center-cta">
@@ -515,7 +515,7 @@
       <div class="faq-list">
         <details class="faq-item">
           <summary><h3>What is pal, exactly?</h3></summary>
-          <p>A bring-your-own-key terminal coding agent written in TypeScript that runs on Bun. It works inside your own project directory: it reads and edits files, searches the codebase, runs shell commands, and verifies its own changes. You supply your own model provider API key — there is no hosted service and no account with pal.</p>
+          <p>A bring-your-own-key terminal coding agent written in TypeScript that runs on Bun. It works inside your own project directory: it reads and edits files, searches the codebase, runs shell commands, and verifies its own changes. You supply your own model provider API key - there is no hosted service and no account with pal.</p>
         </details>
         <details class="faq-item">
           <summary><h3>How do I install it?</h3></summary>
@@ -531,11 +531,11 @@
         </details>
         <details class="faq-item">
           <summary><h3>Can I add my own tools?</h3></summary>
-          <p>Yes — that is the core of the design. Extensions resolve at runtime and are never compiled in. An extension is an npm package whose default export declares a name, tool definitions, handlers, an optional <code>setup()</code>, and optional lifecycle hooks such as <code>onTurnStart</code>, <code>onTurnEnd</code>, <code>onToolCall</code>, and <code>onError</code>. Drop it in <code>~/.pal/extensions</code> or name it in your config.</p>
+          <p>Yes - that is the core of the design. Extensions resolve at runtime and are never compiled in. An extension is an npm package whose default export declares a name, tool definitions, handlers, an optional <code>setup()</code>, and optional lifecycle hooks such as <code>onTurnStart</code>, <code>onTurnEnd</code>, <code>onToolCall</code>, and <code>onError</code>. Drop it in <code>~/.pal/extensions</code> or name it in your config.</p>
         </details>
         <details class="faq-item">
           <summary><h3>Is the tool calling model-safe?</h3></summary>
-          <p>No — and it does not pretend to be. Permissions are glob-based allow/ask/deny rules with prompts for sensitive files and a deny list for catastrophic shell commands. That is guardrailing, not a sandbox: an allowed command runs as your user. Run pal in a container if you need containment.</p>
+          <p>No - and it does not pretend to be. Permissions are glob-based allow/ask/deny rules with prompts for sensitive files and a deny list for catastrophic shell commands. That is guardrailing, not a sandbox: an allowed command runs as your user. Run pal in a container if you need containment.</p>
         </details>
         <details class="faq-item">
           <summary><h3>Is pal open source?</h3></summary>
@@ -559,11 +559,11 @@
     <nav class="footer-links" aria-label="Footer">
       <a href="https://www.npmjs.com/package/pal-code">npm</a>
       <a href="#faq">FAQ</a>
-      <a href="https://fngadiyo.com">Fngadiyo</a>
+      <a href="https://fngadiyo.com">fngadiyo</a>
     </nav>
   </div>
   <div class="wrap footer-legal">
-    <p>MIT licensed. Installed from <a href="https://www.npmjs.com/package/pal-code">npm</a>. Built by <a href="https://fngadiyo.com">Fngadiyo</a>.</p>
+    <p>MIT licensed. Installed from <a href="https://www.npmjs.com/package/pal-code">npm</a>. Built by <a href="https://fngadiyo.com">fngadiyo</a>.</p>
   </div>
 </footer>
 </body>
