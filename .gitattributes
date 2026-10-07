@@ -1,0 +1,17 @@
+# Normalize line endings in the repository so the deployed files are
+# identical no matter which machine or editor commits them.
+* text=auto eol=lf
+
+*.png binary
+*.svg text eol=lf
+*.html text eol=lf
+*.css text eol=lf
+*.js text eol=lf
+*.txt text eol=lf
+*.xml text eol=lf
+*.md text eol=lf
+
+# No eol conversion for these.
+CNAME text eol=lf
+.gitignore text eol=lf
+.nojekyll text eol=lf

@@ -1,0 +1,24 @@
+# Nothing is generated — this is a hand-maintained static site.
+# These entries are safety nets in case a local tool is ever run here.
+
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor / OS noise
+.vscode/
+.idea/
+*.swp
+*~
+
+# Logs and scratch output
+*.log
+npm-debug.log*
+.cache/
+tmp/
+temp/
+
+# Local secrets, in case one is ever added
+.env
+.env.local
+*.pem

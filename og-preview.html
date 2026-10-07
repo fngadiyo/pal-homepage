@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>pal — OG preview 1200x630</title>
+<style>
+  /* Screenshot source for og.png.
+     Open this file in a browser, then capture the 1200x630 area at 1x
+     (Windows: Win+Shift+S, or F12 device toolbar at 1200x630, zoom 100%).
+     Save the capture as og.png in the site root.
+     No external fonts or network requests — everything is inline so the
+     render is deterministic. */
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html, body {
+    background: #ffffff;
+    /* Force the dark terminal palette regardless of OS theme. */
+    color-scheme: dark;
+  }
+
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto,
+      "Helvetica Neue", Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .card {
+    width: 1200px;
+    height: 630px;
+    display: grid;
+    grid-template-columns: 1fr 470px;
+    background: #0e1116;
+    overflow: hidden;
+    position: relative;
+  }
+
+  /* Subtle brand wash, top-left only. */
+  .card::before {
+    content: "";
+    position: absolute;
+    top: -180px;
+    left: -120px;
+    width: 780px;
+    height: 620px;
+    background: radial-gradient(circle, #12241f 0%, rgba(14,17,22,0) 70%);
+    pointer-events: none;
+  }
+
+  .left {
+    position: relative;
+    padding: 74px 0 66px 76px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 13px;
+    margin-bottom: 46px;
+  }
+
+  .mark {
+    font-family: ui-monospace, "Cascadia Code", Consolas, monospace;
+    font-weight: 700;
+    font-size: 27px;
+    color: #4bd6a8;
+    background: #0d2a23;
+    border: 1px solid #1e3b33;
+    border-radius: 9px;
+    padding: 5px 11px;
+    line-height: 1;
+  }
+
+  .wordmark {
+    font-size: 30px;
+    font-weight: 700;
+    color: #e6ebf1;
+    letter-spacing: -0.015em;
+  }
+
+  h1 {
+    font-size: 62px;
+    line-height: 1.07;
+    letter-spacing: -0.03em;
+    font-weight: 800;
+    color: #e6ebf1;
+    max-width: 15ch;
+  }
+
+  h1 .accent { color: #4bd6a8; }
+
+  .sub {
+    margin-top: 26px;
+    font-size: 24px;
+    line-height: 1.48;
+    color: #a5b0bd;
+    max-width: 33ch;
+  }
+
+  .foot {
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 18px;
+    color: #7b8794;
+  }
+
+  .chip {
+    display: inline-block;
+    font-family: ui-monospace, "Cascadia Code", Consolas, monospace;
+    font-size: 16px;
+    color: #cbd3dc;
+    background: #161c24;
+    border: 1px solid #262f39;
+    border-radius: 7px;
+    padding: 6px 11px;
+  }
+
+  .dotsep { color: #3b4650; }
+
+  /* ---- Terminal panel ---- */
+  .right {
+    position: relative;
+    padding: 58px 66px 58px 0;
+    display: flex;
+    align-items: center;
+  }
+
+  .term {
+    width: 100%;
+    background: #0a0d12;
+    border: 1px solid #232a33;
+    border-radius: 11px;
+    overflow: hidden;
+    box-shadow: 0 24px 60px -30px rgba(0, 0, 0, 0.9);
+  }
+
+  .bar {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    padding: 11px 14px;
+    background: #14181f;
+    border-bottom: 1px solid #1c232b;
+  }
+
+  .bar i {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #333c47;
+    display: block;
+  }
+
+  .bar span {
+    margin-left: 7px;
+    font-family: ui-monospace, "Cascadia Code", Consolas, monospace;
+    font-size: 13px;
+    color: #7b8794;
+  }
+
+  pre {
+    margin: 0;
+    padding: 18px 18px 22px;
+    font-family: ui-monospace, "Cascadia Code", Consolas, monospace;
+    font-size: 14.5px;
+    line-height: 1.72;
+    color: #d7dde5;
+    white-space: pre;
+  }
+
+  .dim { color: #7d8794; }
+  .ok { color: #7ee2a8; }
+  .tool { color: #ffb37a; }
+  .blue { color: #79c0ff; }
+</style>
+</head>
+<body>
+
+<div class="card">
+  <div class="left">
+    <div class="brand">
+      <span class="mark">&gt;_</span>
+      <span class="wordmark">pal</span>
+    </div>
+
+    <h1>The terminal coding agent you can <span class="accent">take apart</span>.</h1>
+
+    <p class="sub">Bring your own key. Extend it at runtime. Read every line of the loop.</p>
+
+    <div class="foot">
+      <span class="chip">MIT</span>
+      <span class="dotsep">•</span>
+      <span>Open source on GitHub</span>
+      <span class="dotsep">•</span>
+      <span>pal.fngadiyo.com</span>
+    </div>
+  </div>
+
+  <div class="right">
+    <div class="term">
+      <div class="bar">
+        <i></i><i></i><i></i>
+        <span>pal</span>
+      </div>
+      <pre><code><span class="dim">~ $</span> pal
+
+<span class="dim">paste your provider key (BYOK)</span>
+
+<span class="dim">&gt;</span> refactor SessionStore to stream
+
+<span class="tool">&#9203;</span> read_file  store.ts
+<span class="tool">&#9203;</span> edit_file  store.ts
+<span class="ok">&#10003; edit ok</span> <span class="dim">diagnostics</span>
+<span class="tool">&#9203;</span> verify     <span class="ok">pass</span>
+
+<span class="dim">deepseek-chat &#183; DeepSeek</span>  <span class="blue">/help</span></code></pre>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
